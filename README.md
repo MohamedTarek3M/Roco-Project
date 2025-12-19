@@ -26,6 +26,16 @@ Follow these steps.
 
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - ESP32 Board Support
+- [PS4Controller Library](https://github.com/aed3/PS4-esp32)
+
+### Features
+
+- **PS4 Control**: Full control using DualShock 4 controller.
+- **Speed Control**: Toggle smooth speed limiting with `Cross` button.
+- **Boost Mode**: Activate temporary speed boost with `L1 + R1` (3 seconds duration).
+- **Rumble Feedback**: Haptic feedback for engine RPM, boost, and cooldown events.
+- **LED Indicators**: Visual feedback for modes (Green: Speed Control, Red: Boost, Cyan: Idle).
+- **Smooth Acceleration**: Ramping logic for smooth starts and stops.
 
 ### Installation
 
@@ -49,6 +59,11 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 5. Go to **Tools > Board > Boards Manager**.
 6. Search for **"ESP32"**, then click **Install** on the package developed by Espressif Systems.
 7. Once installed, go to **Tools > Board** and select your ESP32 board model (e.g., *ESP32 Dev Module*).
+
+#### 3. Install Libraries
+
+1. Go to **Sketch > Include Library > Manage Libraries**.
+2. Search for `PS4Controller` and install the library by `aed3`.
 
 #### 4. Upload the Code
 
